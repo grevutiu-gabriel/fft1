@@ -5,7 +5,7 @@ CXX=g++
 all: fourier
 
 fourier: main.o
-	$(CXX) -o $@ $(CXXFLAGS) $<
+	$(CXX) -o $@ $< $(CXXFLAGS) 
 
 main.o: main.cpp
 	$(CXX) -c -o $@ $(CXXFLAGS) $<
